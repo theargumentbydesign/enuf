@@ -1,0 +1,39 @@
+/* CSS Document */
+
+.not-front .view-research {
+	
+	.views-row {
+		float:left;
+		width:100%;
+		margin-bottom:20px;
+		border-bottom:1px dotted #efefef;
+		padding-bottom:10px;
+	}
+	
+	.views-field-title {
+		font-family:'Aromatica W00 Bold';
+		float:right;
+		width:75%;
+		font-size: 2em;
+	}
+		.postdate {
+	font-family:'FrutigerSerifLTW01-Ital';
+		float:right;
+		width:75%;
+		font-size: 1em;
+	}
+		.views-field-title a  {
+		text-decoration: none;
+	}
+	
+	.photo {
+		float:left;
+		width:20%;
+	}
+	.views-field-body {
+		float:right;
+		width:75%;
+	}
+	
+	
+}

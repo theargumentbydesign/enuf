@@ -1,0 +1,856 @@
+/* CSS Document */
+/* line 3, ../../../sass/layout/_getdown.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 6, ../../../sass/layout/_getdown.scss */
+.l-page {
+  min-height: 100%;
+  position: relative;
+  background: #ffffff;
+  border: none; }
+
+@media (min-width: 1220px) {
+  /* line 14, ../../../sass/layout/_getdown.scss */
+  .l-page {
+    border: 1px solid #dbe9ef;
+    border-top: none;
+    border-bottom: none; } }
+/* line 21, ../../../sass/layout/_getdown.scss */
+.l-main {
+  padding-bottom: 1200px;
+  width: 100%; }
+
+/* line 26, ../../../sass/layout/_getdown.scss */
+.l-footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  height: 1200px;
+  background: url(/sites/all/themes/enuf/img/footer.png) repeat-x #000000;
+  width: 100%; }
+
+@media (min-width: 768px) {
+  /* line 35, ../../../sass/layout/_getdown.scss */
+  .l-main {
+    padding-bottom: 340px; }
+
+  /* line 38, ../../../sass/layout/_getdown.scss */
+  .l-footer-wrapper {
+    height: 340px; } }
+/* CSS Document */
+/* line 3, ../../../sass/layout/_hero.scss */
+body.front .hero {
+  min-height: 600px;
+  max-height: 700px;
+  margin-top: 76px; }
+
+/* line 9, ../../../sass/layout/_hero.scss */
+body.not-front .hero {
+  min-height: 400px;
+  max-height: 500px;
+  margin-top: 76px; }
+
+/* TITLES ETC */
+/* line 17, ../../../sass/layout/_hero.scss */
+.hero .pane-title,
+.hero .pane-page-title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 2;
+  text-shadow: 0px 0px 30px black; }
+
+/* line 29, ../../../sass/layout/_hero.scss */
+.hero .pane-title {
+  top: 150px;
+  color: #ffffff;
+  font-size: 3em;
+  transition: font-size 300ms;
+  line-height: 1em;
+  text-align: center; }
+
+/* line 38, ../../../sass/layout/_hero.scss */
+.hero .pane-page-title h1 {
+  text-align: center;
+  font-family: "Avenir LT W01 35 Light";
+  font-size: 5.5em;
+  color: #ffffff; }
+
+/* line 45, ../../../sass/layout/_hero.scss */
+.l-region .hero p {
+  padding: 0; }
+
+/* line 48, ../../../sass/layout/_hero.scss */
+.l-region--hero p img {
+  min-width: 100%;
+  margin-top: 0px; }
+
+/* line 52, ../../../sass/layout/_hero.scss */
+.front .l-region--hero p img {
+  position: absolute;
+  bottom: 0; }
+
+/* line 57, ../../../sass/layout/_hero.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  padding-top: 100px;
+  color: #ffffff; }
+
+/* line 66, ../../../sass/layout/_hero.scss */
+.overlay h1, .overlay h3 {
+  text-shadow: 0px 0px 30px black;
+  color: #ffffff;
+  font-family: "Avenir LT W01 35 Light"; }
+
+/* line 71, ../../../sass/layout/_hero.scss */
+.overlay h1 {
+  font-size: 4em; }
+
+/* line 74, ../../../sass/layout/_hero.scss */
+.overlay h3 {
+  font-size: 1.4em;
+  width: 75%;
+  margin: 0 auto; }
+
+/* line 79, ../../../sass/layout/_hero.scss */
+.overlay .ourstory {
+  padding: 20px;
+  border: 2px solid #ffffff;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 40px auto; }
+
+@media (min-width: 768px) {
+  /* line 88, ../../../sass/layout/_hero.scss */
+  .hero .pane-title,
+  .hero .pane-page-title {
+    top: 150px; }
+
+  /* line 93, ../../../sass/layout/_hero.scss */
+  .front .hero {
+    height: 650px; }
+
+  /* line 97, ../../../sass/layout/_hero.scss */
+  .hero {
+    height: 500px;
+    overflow: hidden;
+    position: relative; }
+
+  /* line 103, ../../../sass/layout/_hero.scss */
+  .page-user .hero {
+    height: inherit; }
+
+  /* line 106, ../../../sass/layout/_hero.scss */
+  .page-contact .hero {
+    height: 75px; }
+
+  /* line 109, ../../../sass/layout/_hero.scss */
+  .l-region--hero p img {
+    width: 100%;
+    margin-top: -150px; } }
+@media (min-width: 1024px) {
+  /* line 117, ../../../sass/layout/_hero.scss */
+  .hero .pane-title {
+    top: 350px; } }
+/* line 1, ../../../sass/layout/_tabs.scss */
+#tabs ul.tabs--primary {
+  margin: 1em 0;
+  border: none; }
+
+/* line 5, ../../../sass/layout/_tabs.scss */
+#tabs ul.tabs--primary li {
+  margin: 10px; }
+
+/* line 8, ../../../sass/layout/_tabs.scss */
+#tabs ul.tabs--primary li a {
+  color: #d04949; }
+
+/* CSS Document */
+/* line 2, ../../../sass/layout/_width.scss */
+.l-page {
+  margin: 0;
+  width: 100%; }
+
+@media (min-width: 1024px) {
+  /* line 15, ../../../sass/layout/_width.scss */
+  .l-page {
+    margin: 0 auto;
+    width: 100%; } }
+@media (min-width: 1220px) {
+  /* line 25, ../../../sass/layout/_width.scss */
+  .l-page {
+    margin: 0 auto;
+    width: 1218px; } }
+/* CSS Document */
+/* line 3, ../../../sass/layout/blocks/_footer.scss */
+footer .l-region--footer {
+  padding: 20px; }
+
+/* line 7, ../../../sass/layout/blocks/_footer.scss */
+footer .l-region-footer p {
+  font-size: 0.8em; }
+
+/* line 11, ../../../sass/layout/blocks/_footer.scss */
+footer .pane-block-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff; }
+
+/* line 17, ../../../sass/layout/blocks/_footer.scss */
+footer .pane-block-1 p {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 1em;
+  text-align: center; }
+
+/* line 24, ../../../sass/layout/blocks/_footer.scss */
+#footer-copyright {
+  left: 0; }
+
+@media (min-width: 768px) {
+  /* line 31, ../../../sass/layout/blocks/_footer.scss */
+  footer .pane-block-1 p {
+    text-align: left; }
+
+  /* line 35, ../../../sass/layout/blocks/_footer.scss */
+  #menu-address {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    margin: 40px 0 10px 0;
+    text-align: left; } }
+/* Main menu and addresss block */
+/* line 48, ../../../sass/layout/blocks/_footer.scss */
+#menu-address h4 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0; }
+
+@media (min-width: 768px) {
+  /* line 55, ../../../sass/layout/blocks/_footer.scss */
+  #menu-address h4 {
+    text-align: left; } }
+/* line 61, ../../../sass/layout/blocks/_footer.scss */
+#menu-address p {
+  margin: 0;
+  padding: 0 0 10px 0;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  color: #fff; }
+
+/* line 69, ../../../sass/layout/blocks/_footer.scss */
+#menu-address h4 a,
+#menu-address p a {
+  color: #fff;
+  text-decoration: none; }
+
+/* line 74, ../../../sass/layout/blocks/_footer.scss */
+#menu-address h4 a:hover,
+#menu-address p a:hover {
+  text-decoration: underline; }
+
+/* line 79, ../../../sass/layout/blocks/_footer.scss */
+#menu-address .column {
+  color: #ffffff;
+  width: 100%; }
+
+@media (min-width: 768px) {
+  /* line 85, ../../../sass/layout/blocks/_footer.scss */
+  #menu-address .column {
+    float: left;
+    width: 22%;
+    padding-top: 20px 3% 0 0; } }
+/* FOOTER MENU */
+/* line 13, ../../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+#footlinks:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 99, ../../../sass/layout/blocks/_footer.scss */
+#footlinks ul, #footlinks li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 106, ../../../sass/layout/blocks/_footer.scss */
+#footlinks ul {
+  padding: 0 3%;
+  float: none; }
+
+/* line 111, ../../../sass/layout/blocks/_footer.scss */
+#footlinks li {
+  float: none;
+  text-align: center;
+  line-height: 1.6em; }
+
+@media (min-width: 768px) {
+  /* line 117, ../../../sass/layout/blocks/_footer.scss */
+  #footlinks ul {
+    float: left; }
+
+  /* line 120, ../../../sass/layout/blocks/_footer.scss */
+  #footlinks li {
+    float: left;
+    text-align: left; } }
+/* line 127, ../../../sass/layout/blocks/_footer.scss */
+#footlinks li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 1.5em;
+  font-size: 0.9em; }
+
+/* line 134, ../../../sass/layout/blocks/_footer.scss */
+#footlinks li a:hover {
+  text-decoration: underline; }
+
+/* CSS Document */
+/* line 5, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .views-row {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #efefef;
+  padding-bottom: 10px; }
+/* line 13, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .views-field-title {
+  font-family: 'Aromatica W00 Bold';
+  float: right;
+  width: 75%;
+  font-size: 2em; }
+/* line 19, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .postdate {
+  font-family: 'FrutigerSerifLTW01-Ital';
+  float: right;
+  width: 75%;
+  font-size: 1em; }
+/* line 25, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .views-field-title a {
+  text-decoration: none; }
+/* line 29, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .photo {
+  float: left;
+  width: 20%; }
+/* line 33, ../../../sass/layout/views/_blogs.scss */
+.not-front .view-research .views-field-body {
+  float: right;
+  width: 75%; }
+
+/* CSS Document */
+/* line 3, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-row {
+  position: relative; }
+
+/* line 7, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view #flexslider-1 {
+  border: none;
+  border-radius: 0; }
+
+/* line 12, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view #flexslider-1 li {
+  position: relative; }
+
+/* line 15, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-field-gallery-image img {
+  width: 100%;
+  height: auto; }
+
+/* line 21, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-body {
+  background: rgba(255, 255, 255, 0.75);
+  margin-left: 0;
+  font-size: 2em;
+  top: 0;
+  bottom: 0; }
+
+@media (min-width: 768px) {
+  /* line 30, ../../../sass/layout/views/_gallery.scss */
+  .view-gallery-view .views-field-body {
+    position: absolute;
+    font-size: 1.4em;
+    width: 40%; } }
+@media (min-width: 1024px) {
+  /* line 38, ../../../sass/layout/views/_gallery.scss */
+  .view-gallery-view .views-field-body {
+    font-size: 1.6em; } }
+@media (min-width: 1220px) {
+  /* line 44, ../../../sass/layout/views/_gallery.scss */
+  .view-gallery-view .views-field-body {
+    font-size: 2em; } }
+/* line 50, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-body p {
+  padding: 0 50px;
+  color: #d04949;
+  text-align: left;
+  float: left; }
+
+/* line 56, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-body p a {
+  color: #ffffff;
+  font-size: 0.7em;
+  text-decoration: none; }
+
+/* line 62, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-body p span.readmore {
+  float: right;
+  padding: 0 10px;
+  margin: 20px 0 10px 10px;
+  background: #ffe163;
+  color: #1d367b;
+  line-height: 1em; }
+
+/* line 70, ../../../sass/layout/views/_gallery.scss */
+.view-gallery-view .views-field-body p span.readmore:hover {
+  background: #d04949;
+  color: #ffffff; }
+
+/**
+ * $ARROW
+ */
+/* CSS Document 
+font-family:'Aromatica W00 Bold';
+font-family:'Aromatica W00 Light';
+font-family:'FrutigerSerifLTW01-Bold_722230';
+font-family:'FrutigerSerifLTW01-Ital';
+font-family:'FrutigerSerifLTW01-Bold_722227';
+font-family:'Frutiger Serif LT W01';
+*/
+/* line 11, ../../../sass/base/_html.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #1d367b;
+  font-family: 'Aromatica W00 Bold' !important;
+  font-weight: normal; }
+
+/* line 17, ../../../sass/base/_html.scss */
+.pane-node-title h2 {
+  font-size: 2.2em;
+  font-family: 'Aromatica W00 Bold'; }
+
+/* line 22, ../../../sass/base/_html.scss */
+.l-content p {
+  font-size: 1em;
+  line-height: 1.65em;
+  margin-bottom: 20px;
+  color: #1d367b;
+  font-family: 'Frutiger Serif LT W01'; }
+
+/* line 31, ../../../sass/base/_html.scss */
+.l-content li {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #1d367b;
+  font-family: 'Frutiger Serif LT W01'; }
+
+/* line 39, ../../../sass/base/_html.scss */
+a:link, a:visited, a:hover, a:active {
+  color: #d04949; }
+
+/* line 43, ../../../sass/base/_html.scss */
+.l-header {
+  height: 133px;
+  background: #ffffff;
+  width: 100%; }
+
+/* line 53, ../../../sass/base/_html.scss */
+.l-branding {
+  position: absolute;
+  width: 100%; }
+
+@media (min-width: 1220px) {
+  /* line 59, ../../../sass/base/_html.scss */
+  .l-header {
+    width: 1216px; } }
+/* line 65, ../../../sass/base/_html.scss */
+.pane-page-logo {
+  float: left;
+  width: 20%; }
+
+/* line 69, ../../../sass/base/_html.scss */
+.pane-page-logo img {
+  max-width: 200px;
+  margin: 10px; }
+
+/* line 74, ../../../sass/base/_html.scss */
+.pane-page-slogan {
+  padding: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #1d367b;
+  font-family: 'Aromatica W00 Bold';
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+@media (min-width: 768px) {
+  /* line 86, ../../../sass/base/_html.scss */
+  .pane-page-slogan {
+    font-size: 1.2em; } }
+@media (min-width: 1024px) {
+  /* line 91, ../../../sass/base/_html.scss */
+  .pane-page-slogan {
+    font-size: 1.4em;
+    width: 75%; } }
+@media (min-width: 1220px) {
+  /* line 97, ../../../sass/base/_html.scss */
+  .pane-page-slogan {
+    font-size: 1.4em;
+    width: 80%; } }
+/* line 1, ../../../sass/base/_media.scss */
+img, media {
+  max-width: 100%; }
+
+/* CSS Document */
+/* CSS Document */
+/* line 3, ../../../sass/base/_tabgroups.scss */
+.horizontal-tabs {
+  border: none; }
+
+/* line 7, ../../../sass/base/_tabgroups.scss */
+.horizontal-tabs-list li {
+  border: none;
+  padding: 10px; }
+
+/* CSS Document */
+/* line 3, ../../../sass/components/_forms.scss */
+.form-item label {
+  font-family: 'Aromatica W00 Bold';
+  font-weight: normal;
+  margin: 10px 0 5px 0; }
+
+/* line 9, ../../../sass/components/_forms.scss */
+.form-item .description {
+  padding: 5px 0 10px; }
+
+/* line 13, ../../../sass/components/_forms.scss */
+input[type="text"],
+input[type="text"].chosen-search-input {
+  padding: 10px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  float: left;
+  width: 100%; }
+
+/* line 24, ../../../sass/components/_forms.scss */
+input[type="password"],
+input[type="email"] {
+  padding: 10px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: 5px 0; }
+
+/* line 32, ../../../sass/components/_forms.scss */
+#edit-profile-researcher-field-contactable {
+  padding: 20px;
+  background: #38a9e1;
+  margin: 10px 0; }
+
+/* line 38, ../../../sass/components/_forms.scss */
+#edit-profile-researcher-field-profile-picture {
+  margin: 10px 0; }
+
+/* line 42, ../../../sass/components/_forms.scss */
+fieldset.filter-wrapper {
+  display: none; }
+
+/* CSS Document */
+/* line 1, ../../../sass/components/_navigation.scss */
+.pane-superfish-2,
+.pane-superfish-3 {
+  position: relative;
+  clear: both;
+  width: 100%;
+  border-bottom: none;
+  text-align: center;
+  padding: 10px 0 15px; }
+
+@media (min-width: 768px) {
+  /* line 11, ../../../sass/components/_navigation.scss */
+  .pane-superfish-2,
+  .pane-superfish-3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 5px solid #e08686;
+    text-align: inherit; } }
+/* line 21, ../../../sass/components/_navigation.scss */
+.l-branding .menu {
+  list-style: none;
+  list-style-type: none;
+  width: 100%;
+  float: right; }
+
+/* line 28, ../../../sass/components/_navigation.scss */
+.l-branding .menu li {
+  list-style: none;
+  list-style-type: none;
+  font-family: 'Frutiger Serif LT W01';
+  font-size: 1.3em;
+  padding: 0 25px 0 0;
+  float: right; }
+
+/* line 38, ../../../sass/components/_navigation.scss */
+.l-branding .menu li a {
+  color: #d04949;
+  text-decoration: none;
+  padding: 6px 0 10px 0;
+  display: block; }
+
+/* line 45, ../../../sass/components/_navigation.scss */
+.l-branding .menu li a:hover,
+.l-branding .menu li a.active {
+  color: #ffe163; }
+
+/* line 50, ../../../sass/components/_navigation.scss */
+.l-branding .menu li ul {
+  position: absolute;
+  width: 100%;
+  background: #1a6db9;
+  opacity: .9;
+  height: 47px; }
+
+/* line 58, ../../../sass/components/_navigation.scss */
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+  top: 57px; }
+
+/* line 62, ../../../sass/components/_navigation.scss */
+.l-branding .menu li ul li {
+  font-size: 0.8em;
+  padding: 0; }
+
+/* line 67, ../../../sass/components/_navigation.scss */
+.l-branding .menu li ul li a {
+  color: #ffffff;
+  font-weight: normal;
+  border-bottom: none;
+  padding: 15px 20px;
+  margin: 0; }
+
+/* line 74, ../../../sass/components/_navigation.scss */
+.l-branding .menu li ul li a:hover,
+.l-branding .menu li ul li a.active {
+  color: #1d367b;
+  background: #38a9e1; }
+
+/* line 13, ../../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+.l-main:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 31, ../../../sass/layouts/page/page.layout.scss */
+.l-content {
+  width: 70%;
+  margin: 70px auto 0; }
+
+/* override header depth for register page (node/6) and enuf-conference page (node12) 
+.page-contact .l-content,
+.page-node-6 .l-content,
+.page-node-12 .l-content {
+	padding-top:175px;
+}
+*/
+/* line 44, ../../../sass/layouts/page/page.layout.scss */
+.l-region--hero img {
+  width: 100%; }
+
+/* line 13, ../../../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+.pane-page-tabs:after,
+.pane-page-content:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 52, ../../../sass/layouts/page/page.layout.scss */
+.page-network-register .pane-page-title,
+.page-researcher-register .pane-page-title {
+  padding: 0; }
+
+/* line 57, ../../../sass/layouts/page/page.layout.scss */
+.pane-page-title {
+  padding: 125px 0 0 0; }
+
+/* line 61, ../../../sass/layouts/page/page.layout.scss */
+.pane-page-content {
+  padding: 0 0 50px 0; }
+
+/* line 65, ../../../sass/layouts/page/page.layout.scss */
+.group-conference {
+  margin-top: 20px; }
+
+/* line 69, ../../../sass/layouts/page/page.layout.scss */
+.group-conference .field--name-field-event-date {
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+  color: #d04949;
+  background: #ffe163;
+  font-family: 'Aromatica W00 Bold' !important; }
+
+/* line 79, ../../../sass/layouts/page/page.layout.scss */
+.horizontal-tabs ul.horizontal-tabs-list li {
+  margin: 12px;
+  border: none;
+  font-family: 'Aromatica W00 Bold' !important; }
+
+/* line 85, ../../../sass/layouts/page/page.layout.scss */
+.horizontal-tabs ul.horizontal-tabs-list li:hover {
+  background: #ffffff; }
+
+/* line 88, ../../../sass/layouts/page/page.layout.scss */
+.horizontal-tabs ul.horizontal-tabs-list li:hover a {
+  background: #ffffff; }
+
+/* line 93, ../../../sass/layouts/page/page.layout.scss */
+.boxtext {
+  font-family: 'Aromatica W00 Light';
+  float: left;
+  width: 100%;
+  margin: 20px 0 40px;
+  font-size: 0.9em;
+  background: #efefef; }
+
+/* line 103, ../../../sass/layouts/page/page.layout.scss */
+.boxtext p {
+  font-family: 'Frutiger Serif LT W01'; }
+
+/* line 106, ../../../sass/layouts/page/page.layout.scss */
+.boxtext > p {
+  margin: 20px 10%; }
+
+/* line 110, ../../../sass/layouts/page/page.layout.scss */
+.boxtext h2 {
+  float: left;
+  width: 95% !important;
+  margin: 20px 5% 10px; }
+
+/* line 115, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table {
+  float: left;
+  width: 90% !important;
+  margin: 0 5% 20px; }
+
+/* line 121, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr {
+  padding: 5px 0;
+  border-bottom: 1px solid #38a9e1;
+  margin-bottom: 5px; }
+
+/* line 126, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td {
+  vertical-align: top;
+  padding: 0; }
+
+/* line 130, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td p {
+  line-height: 1.2em;
+  margin: 0;
+  padding: 5px 0; }
+
+/* line 135, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td p strong {
+  font-family: 'Aromatica W00 Bold'; }
+
+/* line 139, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.full {
+  width: 100%; }
+
+/* line 143, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.left {
+  width: 5%; }
+
+/* line 146, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.left p {
+  font-family: 'Aromatica W00 Bold'; }
+
+/* line 150, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.middle {
+  width: 75%; }
+
+/* line 153, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.middle p {
+  padding-right: 50px; }
+
+/* line 156, ../../../sass/layouts/page/page.layout.scss */
+.boxtext table tr td.right {
+  width: 20%; }
+
+/* line 160, ../../../sass/layouts/page/page.layout.scss */
+figcaption {
+  font-size: 0.9em; }
+
+/* Register page links */
+/* line 168, ../../../sass/layouts/page/page.layout.scss */
+.join-links {
+  display: block;
+  margin: 20px 25%;
+  width: 50%;
+  background: #ffe163;
+  color: #1d367b;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  font-family: 'Aromatica W00 Bold';
+  transition: background 400ms; }
+
+/* line 180, ../../../sass/layouts/page/page.layout.scss */
+.join-links:hover {
+  transition: background 400ms;
+  background: #d04949;
+  color: #ffffff; }
+
+/* REGISTrATION STUFF */
+/* line 189, ../../../sass/layouts/page/page.layout.scss */
+.tabledrag-toggle-weight-wrapper {
+  display: none; }
+
+/* line 193, ../../../sass/layouts/page/page.layout.scss */
+#user-register-form th,
+#user-register-form td {
+  background: #ffffff; }
+
+/* line 198, ../../../sass/layouts/page/page.layout.scss */
+#user-register-form .description {
+  float: left;
+  width: 100%; }
+
+/* line 203, ../../../sass/layouts/page/page.layout.scss */
+.field-type-text {
+  float: left;
+  width: 100%;
+  margin: 20px 0; }
+
+/* RESOURCE PAGES */
+/* line 213, ../../../sass/layouts/page/page.layout.scss */
+.ds-2col-stacked .group-left {
+  width: 100%; }
+/* line 217, ../../../sass/layouts/page/page.layout.scss */
+.ds-2col-stacked .group-right {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  /* line 226, ../../../sass/layouts/page/page.layout.scss */
+  .ds-2col-stacked .group-left {
+    width: 20%; }
+  /* line 230, ../../../sass/layouts/page/page.layout.scss */
+  .ds-2col-stacked .group-right {
+    width: 75%; }
+  /* line 234, ../../../sass/layouts/page/page.layout.scss */
+  .ds-2col-stacked .group-right .field {
+    padding-bottom: 10px; } }
+
+/*# sourceMappingURL=page.layout.css.map */

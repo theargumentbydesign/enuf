@@ -1,0 +1,44 @@
+/* CSS Document */
+
+.form-item label {
+	font-family:'Aromatica W00 Bold';
+	font-weight:normal;
+	margin:10px 0 5px 0;
+}
+
+.form-item .description {
+	padding:5px 0 10px;
+}
+
+input[type="text"],
+input[type="text"].chosen-search-input{
+	padding:10px;
+	height:50px;
+	border:1px solid #ccc;
+	margin:5px 0;
+	float:left;
+	width:100%;
+}
+
+
+input[type="password"],
+input[type="email"] {
+	padding:10px;
+	height:50px;
+	border:1px solid #ccc;
+	margin:5px 0;
+}
+
+#edit-profile-researcher-field-contactable {
+	padding:20px;
+	background:$cyanblue;
+	margin:10px 0;
+}
+
+#edit-profile-researcher-field-profile-picture {
+	margin:10px 0;
+}
+
+fieldset.filter-wrapper {
+	display:none;
+}

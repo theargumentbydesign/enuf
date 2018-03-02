@@ -1,0 +1,41 @@
+/* CSS Document */
+
+html,body {height:100%;margin:0;padding:0;}
+body {
+}
+.l-page {
+	min-height:100%;
+	position:relative;
+	background:#ffffff;
+	border:none;
+}
+
+		@include breakpoint($widest) {
+					.l-page{
+					border:1px solid $grey;
+					border-top:none;
+					border-bottom:none;
+				}
+		}
+
+.l-main {
+	padding-bottom:1200px;
+	width:100%;
+}
+
+.l-footer-wrapper {
+	position:absolute;
+	bottom:0;
+	height:1200px; 
+	background:url(/sites/all/themes/enuf/img/footer.png) repeat-x #000000;
+	width:100%;
+}  
+
+@include breakpoint($gridded) {
+	.l-main {
+		padding-bottom:340px;
+	}
+	.l-footer-wrapper {
+		height:340px; 
+	} 
+}

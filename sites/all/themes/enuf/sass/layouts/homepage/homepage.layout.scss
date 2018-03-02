@@ -1,0 +1,96 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../layout/**/*";
+@import "../../abstractions/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*";
+
+
+.l-main {
+		@include clearfix;
+}
+
+.l-content {
+	@include grid-span(10,2);
+}
+
+.l-content p {
+	font-size:1.6em;
+	color:$midblue;
+	font-family:'Frutiger Serif LT W01';
+}
+
+.l-content article {
+	padding-bottom:30px;
+	border-bottom:5px solid $cyanblue;
+	margin-bottom:20px;
+}
+
+/* HOMEPAGE SLIDER  */
+
+
+
+
+
+/* BLOG SIDEBAR */
+
+.l-region--sidebar-first {
+	@include grid-span(5,2);
+	clear:left;
+	padding:0 30px 30px;
+	margin-bottom:50px;	
+}
+
+.view-research .views-row {
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+	border-bottom:1px dotted #efefef;
+	padding-bottom:10px;
+}
+
+
+.view-research .photo {
+	width:20%;
+	float:left;
+}
+
+.view-research .postdate,
+.view-research .views-field-title,
+.view-research .views-field-body {
+	width:75%;
+	float:right;
+}
+
+.view-research .postdate {
+	font-family:'FrutigerSerifLTW01-Ital';
+
+}
+
+		.view-research .views-field-title a {
+		font-family:'FrutigerSerifLTW01-Bold_722227';
+		text-decoration: none;
+		font-size:1.2em;
+		}
+
+
+.l-region--sidebar-second {
+	@include grid-span(5,8);
+}

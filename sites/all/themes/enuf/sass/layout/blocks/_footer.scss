@@ -1,0 +1,137 @@
+/* CSS Document */
+
+footer .l-region--footer {
+	padding:20px;
+}
+
+footer .l-region-footer p {
+	font-size: 0.8em;
+}
+
+footer .pane-block-1 {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	color:#ffffff;
+}
+footer .pane-block-1 p {
+	padding:10px 20px;
+	margin:0;
+	font-size: 1em;
+	text-align: center;
+}
+
+#footer-copyright {
+	left:0;
+}
+
+
+@include breakpoint($gridded) {
+
+		footer .pane-block-1 p {
+			text-align: left;
+		}
+
+		#menu-address {	
+			@include grid-span(12,1);	
+			margin:40px 0 10px 0;
+			text-align:left;
+		}	
+}
+
+
+
+
+
+/* Main menu and addresss block */
+
+#menu-address h4 {
+	text-align: center;
+	color:#ffffff;
+	margin-top:0;
+}
+
+		@include breakpoint($gridded) {
+			#menu-address h4 {
+				text-align: left;
+			}
+		}
+
+
+#menu-address p {
+	margin:0;
+	padding:0 0 10px 0;
+	line-height:1.2em;
+	font-size:0.9em;
+	color:#fff;
+}
+
+#menu-address h4 a,
+#menu-address p a {
+	color:#fff;
+	text-decoration: none;
+}
+#menu-address h4 a:hover,
+#menu-address p a:hover {
+	text-decoration: underline;
+}
+
+#menu-address .column {
+	color:#ffffff;
+	width:100%;
+}
+
+@include breakpoint($gridded) {
+	#menu-address .column {
+		float:left;
+		width:22%;
+		padding-top:20px 3% 0 0;
+	}
+}
+
+/* FOOTER MENU */
+
+
+#footlinks {
+	@include clearfix;	
+}
+
+#footlinks ul, #footlinks li {
+	list-style:none;
+	list-style-image:none;
+	margin:0;
+	padding:0;
+}
+
+#footlinks ul {
+	padding:0 3%;
+	float:none;
+} 
+
+#footlinks li {
+	float:none;
+	text-align:center;
+	line-height: 1.6em;
+}
+@include breakpoint ($gridded) {
+	#footlinks ul {
+		float:left;
+	} 
+	#footlinks li {
+		float:left;
+		text-align:left;
+	}	
+}
+ 
+
+#footlinks li a {
+	color:#fff;
+	text-transform: uppercase;
+	padding-right:1.5em;
+	font-size:0.9em;
+}
+
+#footlinks li a:hover {
+	text-decoration: underline
+} 
+

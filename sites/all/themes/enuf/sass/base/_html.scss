@@ -1,0 +1,107 @@
+/* CSS Document 
+font-family:'Aromatica W00 Bold';
+font-family:'Aromatica W00 Light';
+font-family:'FrutigerSerifLTW01-Bold_722230';
+font-family:'FrutigerSerifLTW01-Ital';
+font-family:'FrutigerSerifLTW01-Bold_722227';
+font-family:'Frutiger Serif LT W01';
+*/
+
+
+h1,h2,h3,h4,h5,h6 {
+	color:$blue;
+	font-family:'Aromatica W00 Bold' !important;
+	font-weight:normal;
+}
+
+.pane-node-title h2 {
+	font-size:2.2em;
+	font-family:'Aromatica W00 Bold';
+}
+
+.l-content p {
+	font-size:1em;
+	line-height:1.65em;
+	margin-bottom:20px;
+	color:$blue;
+	font-family:'Frutiger Serif LT W01';
+}
+
+
+.l-content  li {
+	font-size:1em;
+	line-height:1.4em;
+	margin-bottom:20px;
+	color:$blue;
+	font-family:'Frutiger Serif LT W01';
+}
+
+a:link,a:visited, a:hover, a:active {
+	color:$red;
+}
+
+.l-header {
+	height:133px;
+	background:$white;
+	width:100%;
+}
+
+.l-header .l-constrained {
+}
+
+
+.l-branding {
+	position:absolute;
+	width:100%;
+}
+
+		@include breakpoint($widest) {
+			.l-header {
+				width:1216px;
+			}
+		}
+
+
+.pane-page-logo {
+	float:left;
+	width:20%;
+}
+.pane-page-logo img {
+	max-width:200px;
+	margin:10px
+}
+ 
+.pane-page-slogan {
+	padding:20px;
+	font-size:1em;
+	text-transform: uppercase;
+	color:$blue;
+	font-family:'Aromatica W00 Bold';
+	float:right;
+	text-align:right;
+	width:50%;
+}
+
+			@include breakpoint($gridded) {
+				.pane-page-slogan {
+				font-size:1.2em;
+				}
+			}
+			@include breakpoint($wide) {
+				.pane-page-slogan {
+				font-size:1.4em;
+				width:75%;
+				}
+			}
+			@include breakpoint($widest) {
+				.pane-page-slogan {
+				font-size:1.4em;
+				width:80%;
+				}
+			}
+
+
+
+
+
+

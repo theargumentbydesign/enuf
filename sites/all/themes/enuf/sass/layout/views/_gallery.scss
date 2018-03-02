@@ -1,0 +1,73 @@
+/* CSS Document */
+
+.view-gallery-view .views-row {
+	position:relative;
+}
+
+.view-gallery-view  #flexslider-1 {
+	border:none;
+	border-radius:0;
+}
+
+.view-gallery-view  #flexslider-1 li {
+	position:relative;
+}
+.view-gallery-view .views-field-field-gallery-image img {
+	width:100%;
+	height:auto;
+}
+
+
+.view-gallery-view .views-field-body {
+	background:rgba(255,255,255,0.75);
+	margin-left:0;
+	font-size:2em;
+	top:0;
+	bottom:0;
+}
+
+				@include breakpoint ($gridded) {
+						.view-gallery-view .views-field-body {
+								position:absolute;
+								font-size:1.4em;
+								width:40%;
+							}
+				}
+
+				@include breakpoint ($wide) {
+						.view-gallery-view .views-field-body {
+								font-size:1.6em;
+							}
+				}
+
+				@include breakpoint ($widest) {
+						.view-gallery-view .views-field-body {
+								font-size:2em;
+							}
+				}
+
+
+.view-gallery-view .views-field-body p {
+	padding:0 50px;
+	color:$red;
+	text-align: left;
+	float:left;
+}
+.view-gallery-view .views-field-body p a {
+	color:$white;
+	font-size:0.7em;
+	text-decoration: none;
+}
+
+.view-gallery-view .views-field-body p span.readmore {
+	float:right;
+	padding:0 10px;
+	margin:20px 0 10px 10px;
+	background:$yellow;
+	color:$blue; 
+	line-height: 1em;
+} 
+.view-gallery-view .views-field-body p span.readmore:hover {
+	background:$red;
+	color:$white; 
+} 

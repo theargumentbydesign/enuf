@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;sDACsD",
+"sources": ["../../../sass/layouts/page/page.layout.no-query.scss"],
+"names": [],
+"file": "page.layout.no-query.css"
+}

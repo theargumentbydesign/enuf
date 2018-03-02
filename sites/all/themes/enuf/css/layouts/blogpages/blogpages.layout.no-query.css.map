@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;sDACsD",
+"sources": ["../../../sass/layouts/blogpages/blogpages.layout.no-query.scss"],
+"names": [],
+"file": "blogpages.layout.no-query.css"
+}

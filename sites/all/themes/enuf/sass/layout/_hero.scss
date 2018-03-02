@@ -1,0 +1,124 @@
+/* CSS Document */
+
+body.front .hero {
+	min-height:600px;
+	max-height:700px;
+	margin-top:76px;
+}
+
+body.not-front .hero {
+	min-height:400px;
+	max-height:500px;
+	margin-top:76px;
+}
+
+/* TITLES ETC */
+
+.hero .pane-title,
+.hero .pane-page-title { 
+	position:absolute;
+	top:50px;
+	left:0;
+	right:0;
+	padding:0;
+	margin:0 auto;
+	z-index:2;
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.hero .pane-title {
+	top:150px;
+	color:#ffffff;
+	font-size:3em;
+	transition:font-size 300ms;
+	line-height: 1em;
+	text-align: center;
+}
+
+.hero .pane-page-title h1 {
+	text-align: center;
+    font-family:"Avenir LT W01 35 Light";
+	font-size:5.5em;
+	color:#ffffff;
+}
+
+.l-region .hero p {
+	padding:0;
+}
+.l-region--hero p img {
+	min-width:100%;
+	margin-top:0px;
+}
+.front .l-region--hero p img {
+	position:absolute;
+	bottom:0;
+}
+
+.overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	text-align: center;
+	z-index: 1;
+	padding-top:100px;
+	color:#ffffff;
+}
+.overlay h1, .overlay h3 {
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+	color:#ffffff;
+    font-family:"Avenir LT W01 35 Light";
+}
+.overlay h1 {
+	font-size:4em;
+}
+.overlay h3 {
+	font-size:1.4em;
+	width:75%;
+	margin:0 auto;
+}
+.overlay .ourstory {
+	padding:20px;
+	border:2px solid #ffffff;
+	width:200px;
+	background:rgba(255,255,255,0.20);
+	margin:40px auto;
+}
+
+@include breakpoint($gridded) {
+	.hero .pane-title,
+	.hero .pane-page-title { 
+	top:150px;
+	}
+	
+	.front .hero {
+		height:650px;
+	}
+	
+	.hero {
+	height:500px;
+	overflow: hidden;
+		position:relative;
+	}
+
+	.page-user .hero {
+	height:inherit;
+	}
+	.page-contact .hero {
+	height:75px;
+	}
+	.l-region--hero p img {
+	width:100%;
+	margin-top:-150px;
+	}
+}
+
+
+@include breakpoint($wide) {
+	.hero .pane-title {
+	top:350px;
+	}
+}
+
+
+
+

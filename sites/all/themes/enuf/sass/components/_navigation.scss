@@ -1,0 +1,78 @@
+.pane-superfish-2,
+.pane-superfish-3 {
+	position:relative;
+	clear:both;
+	width:100%;
+	border-bottom: none;
+	text-align: center;
+	padding:10px 0 15px;	
+}
+@include breakpoint($gridded) {
+		.pane-superfish-2,
+		.pane-superfish-3 {
+			position:absolute;
+			bottom:0;
+			width:100%;
+			border-bottom: 5px solid $lightred;
+			text-align: inherit;
+		}
+}
+
+.l-branding .menu {
+	list-style: none;
+	list-style-type: none;
+	width:100%;
+	float:right;	
+}
+
+.l-branding .menu li {
+	list-style: none;
+	list-style-type: none;
+	font-family:'Frutiger Serif LT W01';
+	font-size:1.3em;
+	padding:0 25px 0 0;
+	float:right;	
+}
+
+
+.l-branding .menu li a {
+	color:$red;
+	text-decoration: none;
+	padding:6px 0 10px 0;
+	display:block;
+}
+
+.l-branding .menu li a:hover,
+.l-branding .menu li a.active {
+	color:$yellow;
+}
+
+.l-branding .menu li ul {
+	position:absolute;
+	width:100%;
+	background:$midblue;
+	opacity: .9;
+	height:47px;
+}
+
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+	top:57px;
+}
+
+.l-branding .menu li ul li {
+	font-size:0.8em;
+	padding:0;
+}
+
+.l-branding .menu li ul li a {
+	color:#ffffff;
+	font-weight:normal;
+	border-bottom:none;
+	padding:15px 20px;
+	margin:0;
+}
+.l-branding .menu li ul li a:hover,
+.l-branding .menu li ul li a.active {
+	color:$blue;
+	background:$cyanblue;
+}

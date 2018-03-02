@@ -1,0 +1,239 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../layout/**/*";
+@import "../../abstractions/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*";
+
+
+
+.l-main {
+		@include clearfix;
+}
+
+.l-content {
+	width:70%;
+	margin:70px auto 0;
+}
+
+/* override header depth for register page (node/6) and enuf-conference page (node12) 
+.page-contact .l-content,
+.page-node-6 .l-content,
+.page-node-12 .l-content {
+	padding-top:175px;
+}
+*/
+
+.l-region--hero img{
+	width:100%;
+}
+.pane-page-tabs,
+.pane-page-content {
+	@include clearfix;
+}
+
+.page-network-register .pane-page-title,
+.page-researcher-register .pane-page-title {
+	padding:0; 
+}
+
+.pane-page-title {
+	padding:125px 0 0 0; 
+}
+
+.pane-page-content {
+	padding:0 0 50px 0; 
+}
+
+.group-conference {
+	margin-top:20px;
+}
+
+.group-conference .field--name-field-event-date {
+	margin:20px 0;
+	padding:10px;
+	text-align: center;
+	color:$red;
+	background:$yellow;
+	font-family:'Aromatica W00 Bold' !important;
+}
+
+
+.horizontal-tabs ul.horizontal-tabs-list li {
+	margin:12px;
+	border:none;
+	font-family:'Aromatica W00 Bold' !important;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li:hover {
+	background:$white;
+}
+.horizontal-tabs ul.horizontal-tabs-list li:hover a {
+	background:$white;
+}
+
+
+.boxtext {
+	font-family:'Aromatica W00 Light';
+	float:left;
+	width:100%;
+	margin:20px 0 40px;
+	font-size: 0.9em;
+	background:#efefef;
+}
+
+
+.boxtext p {
+font-family:'Frutiger Serif LT W01';
+}
+.boxtext > p {
+	margin:20px 10%;
+}
+
+.boxtext h2 {
+	float:left;
+	width:95% !important;
+	margin:20px 5% 10px;
+}
+.boxtext table {
+	float:left;
+	width:90% !important;
+	margin:0 5% 20px;
+}
+
+.boxtext table tr {
+	padding:5px 0;
+	border-bottom:1px solid $cyanblue;
+	margin-bottom:5px;
+}
+.boxtext table tr td {
+	vertical-align: top;
+	padding:0;
+}
+.boxtext table tr td p {
+	line-height:1.2em;
+	margin:0;
+	padding:5px 0;
+}
+.boxtext table tr td p strong {
+	font-family:'Aromatica W00 Bold';
+}
+
+.boxtext table tr td.full {
+	width:100%;
+}
+
+.boxtext table tr td.left {
+	width:5%;
+}
+.boxtext table tr td.left p {
+	font-family:'Aromatica W00 Bold';
+}
+
+.boxtext table tr td.middle {
+	width:75%;
+}
+.boxtext table tr td.middle p {
+	padding-right:50px;
+}
+.boxtext table tr td.right {
+	width:20%;
+}
+
+figcaption {
+	font-size:0.9em;
+}
+
+
+
+/* Register page links */
+
+.join-links {
+	display:block;
+	margin: 20px 25%;
+	width:50%;
+	background:$yellow;
+	color:$blue;
+	text-align: center;
+	text-decoration: none;
+	padding:10px 0;
+	font-family:'Aromatica W00 Bold';
+	transition:background 400ms;
+}
+.join-links:hover {
+	transition:background 400ms;
+	background:$red;
+	color:$white;
+}
+
+
+/* REGISTrATION STUFF */
+
+.tabledrag-toggle-weight-wrapper {
+	display:none;
+}
+
+#user-register-form th,
+#user-register-form td {
+	background:#ffffff;
+}
+
+#user-register-form .description {
+	float:left;
+	width:100%;
+}
+
+.field-type-text {
+	float:left;
+	width:100%;
+	margin:20px 0;
+}
+
+
+/* RESOURCE PAGES */
+	.ds-2col-stacked {
+
+		.group-left {
+			width:100%;
+		}
+
+		.group-right {
+			width:100%;
+		}
+
+	}
+
+@include breakpoint($gridded) {
+	.ds-2col-stacked {
+
+		.group-left {
+			width:20%;
+		}
+
+		.group-right {
+			width:75%;
+		}
+		
+		.group-right .field {
+			padding-bottom:10px;
+		}
+
+	}
+}
